@@ -1,0 +1,47 @@
+ 
+*Boceto de Interfaz para Monitoreo del Clúster*
+
+### *Pantalla Principal*
+
+*1. Barra de título:* "Monitoreo del Clúster - Estado en Tiempo Real"
+
+*2. Secciones principales:*
+
+- *Resumen General:*
+
+  - Estado del clúster (Activo/Inactivo)
+  - Cantidad de nodos conectados
+  - Número total de contenedores corriendo
+
+- *Lista de Nodos:* (Columna Izquierda)
+
+  - Nombre del nodo
+  - Estado (Online/Offline)
+  - Uso de CPU (%)
+  - Uso de Memoria (%)
+  - Uso de Red (Mbps)
+
+- *Detalles del Nodo Seleccionado:* (Columna Derecha)
+
+  - Gráfico de CPU (actualizado en tiempo real)
+  - Gráfico de Memoria (actualizado en tiempo real)
+  - Gráfico de Red (descarga/subida)
+  - Lista de contenedores en ejecución
+    - Nombre del contenedor
+    - Uso de recursos por contenedor
+
+*3. Área de logs y eventos recientes:* (Parte inferior)
+
+- Últimos eventos del clúster (ejemplo: "Nodo 2 se ha desconectado", "Contenedor X reiniciado").
+- Registro de errores y advertencias.
+
+*Interacción:*
+
+- Permitir seleccionar un nodo para ver sus métricas detalladas.
+- Botón para actualizar manualmente las métricas.
+- Opción de cambiar entre vista general y vista por nodo.
+
+*Diseño visual:*
+
+- Estilo minimalista con colores diferenciados para estados críticos (rojo para fallos, verde para correcto funcionamiento).
+- Gráficos de líneas o barras para mejor visualización de métricas.
